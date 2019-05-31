@@ -179,3 +179,14 @@ p.subscription-btn{
     text-align: center;
     border: 1px solid #333333;
 }
+
+/* アイテムエリア */
+.item-area ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:66px;
+    
+}
+
+.item-area ul li{
+}
