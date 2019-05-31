@@ -12,45 +12,47 @@
 </head>
 
 <body>
-<div id=wraper>
+<div id=wrapper>
+    <!-- wrapperは最後まで囲む -->
     <header>
-        <h1 img src="assets/img/logo.svg" alt="TAKAOSAN"></h1>
+        <h1><img src="assets/img/logo.svg" alt="TAKAOSAN"></h1>
         <img src="assets/img/mainimage1.png" alt="mainimage1">
         <a id=catchcopy><img src="assets/img/catchcopy.png" alt="キャッチコピー"></a>
         <nav id=global-nav>
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SHOP</a></li>
-                <li><a href="">ACCESS</a></li>
-                <li><a href="">BLOG</a></li>
-                <li><a href="">CONTACT</a></li>
+            <ul class="global-nav-list">
+                <li class="global-nav-item"><a href="">HOME</a></li>
+                <li class="global-nav-item"><a href="">ABOUT</a></li>
+                <li class="global-nav-item"><a href="">SHOP</a></li>
+                <li class="global-nav-item"><a href="">ACCESS</a></li>
+                <li class="global-nav-item"><a href="">BLOG</a></li>
+                <li class="global-nav-item"><a href="">CONTACT</a></li>
             </ul>
-            <!-- liで挟む オッケー-->
+            <!-- liで挟む オッケー　class名を入れる オッケー-->
         </nav>
     </header>
-</div>
+
 
 <main>
     <section class="news-area">
         <h2>NEWS</h2>
-        <ul>
-            <li>
+        <ul class="news-list">
+            <li class="news-item">
                 <span>2018.12.17</span>
                 <a href="">TAKAOSANオリジナルハードシェルを限定販売いたしました。</a>
             </li>
-            <li>
+            <li class="news-item">
                 <span>2018.11.09</span>
                 <a href="">PFCフリー撥水剤プレゼントキャンペーン実施中</a>
             </li>
-            <li>
+            <li class="news-item">
                 <span>2018.06.30</span>
                 <a href="">家族参加型 雪上運動会 & 山ガールコラボレーションツアーのご案内。</a>
             </li>
-            <li>
+            <li class="news-item">
                 <span>2018.03.14</span>
                 <a href="">TAKAOSANオンラインショップがオープンしました。オンラインクーポンを期間限定で配布中。お見逃なく！</a>
             </li>
+            <!-- 名前 オッケー-->
         </ul>
     </section>
 
@@ -67,31 +69,32 @@
         </div>
     </section>
 
-    <section class="subscriptiobn-area">
+    <section class="subscription-area">
         <h2>SUBSCRIPTION</h2>
         <p>TAKAOSANオススメの商品を毎月お客様のもとにお送りする定額サービスを実施しております。初月無料なので、安心して始めることが出来ます。</p>
-        <div class="subscriptiobn-contents">
+        <div class="subscription-contents">
             <a href="">
                 <img src="assets/img/subscription-starter-image.jpg" alt="">
                 <h3>Starter</h3>
-                <p class="price">¥<span>2,400</span>/m</p>
-                <p class="Description">気軽に始められるスタータープラン</p>
+                <p class="subscription-price">¥<span>2,400</span>/m</p>
+                <p class="subscription-description">気軽に始められるスタータープラン</p>
                 <p>詳しくはこちら</p>
             </a>
             <a href="">
                 <img src="assets/img/subscription-standard-image.jpg" alt="">
                 <h3>Standard</h3>
-                <p class="price">¥<span>7,800</span>/m</p>
-                <p class="Description">当店オススメのスタンダードパック</p>
+                <p class="subscription-price">¥<span>7,800</span>/m</p>
+                <p class="subscription-description">当店オススメのスタンダードパック</p>
                 <p>詳しくはこちら</p>
             </a>
             <a href="">
                 <img src="assets/img/subscription-master-image.jpg" alt="">
                 <h3>Starter</h3>
-                <p class="price">¥<span>16,400</span>/m</p>>
-                <p class="Description">ハイブランドを毎月お届けします</p>
+                <p class="subscription-price">¥<span>16,400</span>/m</p>>
+                <p class="subscription-description">ハイブランドを毎月お届けします</p>
                 <p>詳しくはこちら</p>
             </a>
+            <!-- 名前 オッケー-->
         </div>
         <p></p>
     </section>
@@ -121,6 +124,6 @@
 
 
 </main>
-    
+</div>
 </body>
 </html>

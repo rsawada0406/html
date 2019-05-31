@@ -10,7 +10,7 @@ body{
 
 #wrapper{
     width: 1080px;
-    margin: 60px auto;
+    margin: 0px auto;
 }
 
 /* ヘッダー */
@@ -18,9 +18,9 @@ header{
     padding-top: 36px;
 }
 
-/* ??? */
  header h1{
     margin-bottom: 36px;
+    width: 207px;
 }
 
 header img{
@@ -40,16 +40,17 @@ header img{
     padding-top: 40px;
 }
 #global-nav ul li{
-    padding: 6px 66px;
+    /* padding: 6px 66px; */
+    width: 180px;
+    text-align: center;
     border-left: 2px solid #575757;
     text-decoration-style: none;
 }
 /* ??? */
 
-#global-nav ul :last-child{
+#global-nav ul li:last-child{
     border-right: 2px solid #575757;
 }
-/* ??? */
 
 /* h2共通 */
 h2{
@@ -68,22 +69,85 @@ h2{
 }
 
 .news-area ul{
+    width: 720px;
+    margin: 0 auto;
     padding-top: 40px;
-    
 }
 
 .news-area ul li{
+    display: flex;
     padding: 24px;
-
 }
 
 .news-area ul li span{
+    display: block;
+    width: 130px;
+    height: 28px;
     padding: 9px 32px;
     background-color: #333333;
     color: #fff;
     margin-right: 40px; 
 }
 
-/* .news-area ul li a{
+.news-area ul li a{
+    width: 540px;
+    line-height: 2;
+    color: #454545;
+} 
+
+/* フューチャーズエリア */
+
+.features-contents{
+    display: flex; 
+    margin-top: 78px;
+}
+.features-img{
+    width: 360px;
+    height: auto;
+}
+/* ???画像比率 */
+.features-text{
+    margin-left: 55px;
+}
+.features-text h3{
+    font-size: 24px;
+    margin-bottom: 42px;
+}
+.features-text p{
+    font-size: 16px;
+    color: #454545;
+    line-height: 1.6;
+}
+/* ???フォントの指定 */
+
+/* サブスクリプションエリア */
+.subscription-area p{
+    margin: 50px auto;
+    width: 720px;
+    text-align: center;
+    line-height: 2;
+    font-size: 16px;
+    color: #454545;
+}
+.subscription-contents{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.subscription-contents a{
     display: block;
-} */
+    margin: 0 24px;
+    border: 1px solid #000;
+    width: 344px;
+    height: 457px;
+    overflow: hidden;
+    /* background-color: #000; */
+}
+.subscription-contents a img{
+    width: 100%;
+}
+.features-contents a h3{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
