@@ -1,7 +1,10 @@
 /* サイト全体 */
 *{
     box-sizing: border-box;
+    font-family: "Hiragino Kaku Gothic ProN";
 }
+
+
 
 body{
     font-family: Montserrat , sans-serif;
@@ -18,19 +21,19 @@ header{
     padding-top: 36px;
 }
 
- header h1{
+header h1{
     margin-bottom: 36px;
     width: 207px;
 }
 
-header img{
+header div{
     position: relative; 
 }
 
 #catchcopy img{
     position: absolute;
-    top:120px;
-    left: 738px;
+    top:-328px;
+    right: 100px;
     width: 242px;
     height: 92px;
 }
@@ -44,9 +47,13 @@ header img{
     width: 180px;
     text-align: center;
     border-left: 2px solid #575757;
-    text-decoration-style: none;
 }
-/* ??? */
+#global-nav ul li a{
+    text-decoration-line: none;
+    color: #454545;
+    font-size: 16px;
+}
+/* ??? aタブにtextdecoration noneを　上の階層のタブに記述してもこの場合はだめ*/
 
 #global-nav ul li:last-child{
     border-right: 2px solid #575757;
@@ -56,16 +63,21 @@ header img{
 h2{
     font-family: Montserrat , sans-serif;
     text-align: center;
-    margin-top:137px;
+    margin-top:136px;
     font-size: 24px; 
 }
 
 /* ニュースエリア */
 .news-area{
     margin-top: 57px;
-    padding: 80px auto;
+    padding: 80px 0;
+    /* padding はautoはあまり使わない　数字とかけ合わせるとエラーが発生する */
     background-color: #fafafa;
     border: 1px solid #eee;
+}
+
+.news-area h2{
+    margin-top: 0;
 }
 
 .news-area ul{
@@ -76,7 +88,7 @@ h2{
 
 .news-area ul li{
     display: flex;
-    padding: 24px;
+    padding-bottom: 24px;
 }
 
 .news-area ul li span{
@@ -100,6 +112,8 @@ h2{
 .features-contents{
     display: flex; 
     margin-top: 78px;
+    align-items: flex-start;
+    /* align-items をすると高さ(上ぞろえ)を合わせてくれる　デフォルトはストレッチ　 */
 }
 .features-img{
     width: 360px;
@@ -136,10 +150,12 @@ h2{
 .subscription-contents a{
     display: block;
     margin: 0 24px;
-    border: 4px solid #454545;
+    border: 4px solid #c9e23f;
     width: 344px;
     height: 456px;
     overflow: hidden;
+    text-decoration-line: none;
+    box-shadow: 0px 3px 16px rgba(0,0,0,0.20);
 }
 .subscription-contents a img{
     width: 100%;
@@ -159,8 +175,14 @@ p.subscription-price{
     text-align: center;
     margin-top: 5px;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 32px;
     color: #454545;
+    font-family: "Montserrat";
+}
+
+p.subscription-price span{
+    font-size: 40px;
+
 }
 
 p.subscription-description{
@@ -175,9 +197,12 @@ p.subscription-description{
 
 p.subscription-btn{
     width: 100%;
+    height: 50px;
     display: block;
     text-align: center;
-    border: 1px solid #333333;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: #eee;
 }
 
 /* アイテムエリア */
@@ -188,5 +213,9 @@ p.subscription-btn{
     
 }
 
-.item-area ul li{
+footer{
+    display: block;
+    text-align: center;
+    margin-top: 446px;
+    margin-bottom: 56px;
 }

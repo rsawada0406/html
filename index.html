@@ -16,9 +16,13 @@
     <!-- wrapperは最後まで囲む -->
     <header>
         <h1><img src="assets/img/logo.svg" alt="TAKAOSAN"></h1>
-        <img src="assets/img/mainimage1.png" alt="mainimage1">
-        <a id=catchcopy><img src="assets/img/catchcopy.png" alt="キャッチコピー"></a>
-        <nav id=global-nav>
+        <div>
+            <img src="assets/img/mainimage1.png" alt="mainimage1">
+            <div id="catchcopy"><img src="assets/img/catchcopy.png" alt="キャッチコピー"></div>
+        </div>
+            <!-- 親と子は同じタグで囲む　かつ　親の階層を上にする　htmlで指定する -->
+
+        <nav id="global-nav">
             <ul class="global-nav-list">
                 <li class="global-nav-item"><a href="">HOME</a></li>
                 <li class="global-nav-item"><a href="">ABOUT</a></li>
@@ -63,7 +67,7 @@
             <div class="features-text">
                 <h3>アウトドアシーンを想定された防水性</h3>
                 <!-- h2→h4 じゃなくて h3 オッケー -->
-                <p>TAKAOSANのハードウェアは、最高の素材や最高の技術・革新的なデザインを追求し続けるその姿勢から、「コストパフォーマンスという言葉は存在しない」と言い切るほど、品質に徹底的にこだわるブランド。今では各メーカーで当たり前になっている「止水ジッパー」やTAKAOSANが開発したものです。<p>
+                <p>TAKAOSANのハードウェアは、最高の素材や最高の技術・革新的なデザインを追求し続けるその姿勢から、「コストパフォーマンスという言葉は存在しない」と言い切るほど、品質に徹底的にこだわるブランド。今では各メーカーで当たり前になっている「止水ジッパー」やTAKAOSANが開発したものです。<br><br>
                 また、一番人気といわれる「Aero888」をはじめとしたバックパックでは、表生地に"バリスティックナイロン"という強度のある撥水ナイロンを使用し、裏地にもハイパロンという耐性ゴムを使用。表と裏のWの防水で、アウトドアシーンや普段の急な雨でも安心です。</p>
             </div>
         </div>
@@ -78,21 +82,21 @@
                 <h3>Starter</h3>
                 <p class="subscription-price">¥<span>2,400</span>/m</p>
                 <p class="subscription-description">気軽に始められるスタータープラン</p>
-                <p class="btn">詳しくはこちら</p>
+                <p class="subscription-btn">詳しくはこちら</p>
             </a>
             <a href="">
                 <img src="assets/img/subscription-standard-image.jpg" alt="">
                 <h3>Standard</h3>
                 <p class="subscription-price">¥<span>7,800</span>/m</p>
                 <p class="subscription-description">当店オススメのスタンダードパック</p>
-                <p class="btn">詳しくはこちら</p>
+                <p class="subscription-btn">詳しくはこちら</p>
             </a>
             <a href="">
                 <img src="assets/img/subscription-master-image.jpg" alt="">
                 <h3>Starter</h3>
                 <p class="subscription-price">¥<span>16,400</span>/m</p>
                 <p class="subscription-description">ハイブランドを毎月お届けします</p>
-                <p class="btn">詳しくはこちら</p>
+                <p class="subscription-btn">詳しくはこちら</p>
             </a>
             <!-- 名前 オッケー-->
         </div>
