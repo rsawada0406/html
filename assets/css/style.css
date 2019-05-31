@@ -42,16 +42,25 @@ header div{
     display: flex;
     padding-top: 40px;
 }
-#global-nav ul li{
-    /* padding: 6px 66px; */
+/* #global-nav ul li{
     width: 180px;
     text-align: center;
     border-left: 2px solid #575757;
+} */
+
+#global-nav ul a:hover{
+    color: #9aaf24;
+    background-color: #fafafa;
 }
+
 #global-nav ul li a{
+    display: block;
     text-decoration-line: none;
     color: #454545;
     font-size: 16px;
+    width: 180px;
+    text-align: center;
+    border-left: 2px solid #575757;
 }
 /* ??? aタブにtextdecoration noneを　上の階層のタブに記述してもこの場合はだめ*/
 
@@ -147,6 +156,7 @@ h2{
     flex-wrap: nowrap;
     justify-content: space-between;
 }
+
 .subscription-contents a{
     display: block;
     margin: 0 24px;
@@ -157,6 +167,16 @@ h2{
     text-decoration-line: none;
     box-shadow: 0px 3px 16px rgba(0,0,0,0.20);
 }
+
+.subscription-contents a:hover .subscription-btn{
+    background: linear-gradient( 90deg, #c9e23f, #47e3dc );
+
+}
+.subscription-contents a:hover{
+    transform: translateY(-5px);
+
+}
+
 .subscription-contents a img{
     width: 100%;
 }
@@ -167,6 +187,7 @@ h2{
     font-size: 22px;
     color: #454545; 
     text-decoration-line: none;
+    font-family: "Montserrat";
 }
 
 p.subscription-price{
@@ -196,11 +217,12 @@ p.subscription-description{
 }
 
 p.subscription-btn{
-    width: 100%;
+    width: auto;
     height: 50px;
     display: block;
     text-align: center;
-    margin: 0 auto;
+    margin: 12px 24px 24px 24px;
+    padding: 12px;
     font-size: 14px;
     background-color: #eee;
 }
@@ -210,7 +232,10 @@ p.subscription-btn{
     display: flex;
     flex-wrap: wrap;
     margin-top:66px;
-    
+}
+
+.item-area ul li :hover{
+    opacity: 0.5;
 }
 
 footer{
