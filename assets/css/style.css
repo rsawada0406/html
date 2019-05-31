@@ -1,0 +1,89 @@
+/* サイト全体 */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Montserrat , sans-serif;
+    font-size: 14px;
+}
+
+#wrapper{
+    width: 1080px;
+    margin: 60px auto;
+}
+
+/* ヘッダー */
+header{
+    padding-top: 36px;
+}
+
+/* ??? */
+ header h1{
+    margin-bottom: 36px;
+}
+
+header img{
+    position: relative; 
+}
+
+#catchcopy img{
+    position: absolute;
+    top:120px;
+    left: 738px;
+    width: 242px;
+    height: 92px;
+}
+
+#global-nav ul{
+    display: flex;
+    padding-top: 40px;
+}
+#global-nav ul li{
+    padding: 6px 66px;
+    border-left: 2px solid #575757;
+    text-decoration-style: none;
+}
+/* ??? */
+
+#global-nav ul :last-child{
+    border-right: 2px solid #575757;
+}
+/* ??? */
+
+/* h2共通 */
+h2{
+    font-family: Montserrat , sans-serif;
+    text-align: center;
+    margin-top:137px;
+    font-size: 24px; 
+}
+
+/* ニュースエリア */
+.news-area{
+    margin-top: 57px;
+    padding: 80px auto;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+}
+
+.news-area ul{
+    padding-top: 40px;
+    
+}
+
+.news-area ul li{
+    padding: 24px;
+
+}
+
+.news-area ul li span{
+    padding: 9px 32px;
+    background-color: #333333;
+    color: #fff;
+    margin-right: 40px; 
+}
+
+/* .news-area ul li a{
+    display: block;
+} */
