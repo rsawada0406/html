@@ -201,6 +201,8 @@ h2{
     }
     .news-area ul{
         width: 100%;
+        padding: 0 25px;
+        padding-top: 40px;
     }
 
     .news-area ul li{
