@@ -17,9 +17,10 @@
     <header>
         <h1><img src="assets/img/logo.svg" alt="TAKAOSAN"></h1>
         <div>
-            <img src="assets/img/mainimage1.png" alt="mainimage1">
+            <div><img src="assets/img/mainimage1.png" alt="mainimage1">
             <div id="catchcopy"><img src="assets/img/catchcopy.png" alt="キャッチコピー"></div>
         </div>
+        <a id=hamburger-menu href=""><img src="assets/img/menu.svg" alt="hamburger-menu"></a>
             <!-- 親と子は同じタグで囲む　かつ　親の階層を上にする　htmlで指定する -->
 
         <nav id="global-nav">
@@ -129,5 +130,15 @@
 
 </main>
 </div>
+
+<script>
+$('#hamburger-menu').on('click',function(){
+    $('#global-nav ul').slideToggle();
+    $('html').toggleClass('hidden');
+    $('body').toggleClass('hidden');
+    return false;
+});
+</script> 
+
 </body>
 </html>

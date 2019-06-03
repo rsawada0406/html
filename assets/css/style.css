@@ -4,8 +4,6 @@
     font-family: "Hiragino Kaku Gothic ProN";
 }
 
-
-
 body{
     font-family: Montserrat , sans-serif;
     font-size: 14px;
@@ -14,6 +12,13 @@ body{
 #wrapper{
     width: 1080px;
     margin: 0px auto;
+}
+
+@media(max-width:768px){
+    #wrapper{
+        width: 100%;
+        padding: 0 2%;
+    }
 }
 
 /* ヘッダー */
@@ -30,12 +35,25 @@ header div{
     position: relative; 
 }
 
+@media(max-width:768px){
+    header div img{
+        width: 100%;
+    }
+}
+
 #catchcopy img{
     position: absolute;
     top:-328px;
     right: 100px;
     width: 242px;
     height: 92px;
+}
+@media(max-width:768px){
+    #catchcopy img{
+        top:52px;
+        right: 30px;
+        display: none;
+    }
 }
 
 #global-nav ul{
@@ -68,13 +86,72 @@ header div{
     border-right: 2px solid #575757;
 }
 
+#hamburger-menu{
+    display: none;
+}
+
+@media(max-width:768px){
+    #hamburger-menu{
+        display: block;
+        position: fixed;
+        top: 40px;
+        right:37px;
+    }
+
+     #global-nav ul{
+        width: 100%;
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(255,255,255,.95);
+        z-index: 1;
+    }
+
+    #global-nav ul li{
+        width: 100%;
+        border-bottom: 1px solid #ccc;
+    }
+    #global-nav ul li:first-child{
+        border-top: 1px solid #ccc;
+    }
+
+    #global-nav ul li a{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        padding: 16px 0;
+        height: auto;
+        border-left: none;
+        text-align: center;
+    } 
+
+    #global-nav ul li a:hover{
+        color: #9aaf24;
+        background-color: #fafafa;
+    }
+
+}
+
 /* h2共通 */
 h2{
     font-family: Montserrat , sans-serif;
     text-align: center;
     margin-top:136px;
     font-size: 24px; 
+    background-image: url("../img/titlebar.png") ;
+    background-repeat:no-repeat;
+    background-position:center; 
 }
+
+@media(max-width:768px){
+    h2{
+        margin-top: 50px;
+    }
+
+}
+
 
 /* ニュースエリア */
 .news-area{
@@ -116,6 +193,28 @@ h2{
     color: #454545;
 } 
 
+@media(max-width:768px){
+    .news-area ul{
+        width: 100%;
+    }
+
+    .news-area ul li{
+        display: block;
+        margin: 5%;
+    }
+
+    .news-area ul li span{
+        display: block;
+    }
+    /* ???真ん中にしたい */
+    .news-area ul li a{
+        width: 100%;
+        display: block;
+        padding-top: 5px;
+    }
+    
+}
+
 /* フューチャーズエリア */
 
 .features-contents{
@@ -141,7 +240,30 @@ h2{
     color: #454545;
     line-height: 1.6;
 }
-/* ???フォントの指定 */
+
+@media(max-width:768px){
+    .features-contents{
+        display: block;
+    }
+    .features-img{
+        width: 100%;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .features-text{
+        margin: 0 auto;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .features-text h3{
+        padding-top: 30px;
+    }
+
+    .features-text p{
+    }
+}
 
 /* サブスクリプションエリア */
 .subscription-area p{
@@ -227,6 +349,33 @@ p.subscription-btn{
     background-color: #eee;
 }
 
+@media(max-width:768px){
+    .subscription-area p{
+        margin: 5px auto;
+        width: 100%;
+    }
+
+    .subscription-contents{
+        display: block;
+    }
+
+    .subscription-contents a{
+        display: block;
+        margin: 50px auto;
+    }
+
+    p.subscription-description{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+
+    p.subscription-btn{
+        margin: 0 auto;
+    }
+    /* ???両端の余白の開け方 */
+
+}
+
 /* アイテムエリア */
 .item-area ul{
     display: flex;
@@ -236,6 +385,19 @@ p.subscription-btn{
 
 .item-area ul li :hover{
     opacity: 0.5;
+}
+
+@media(max-width:768px){
+    .item-area ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .item-area ul li{
+        width: 160px;
+        height: auto;
+    }
+    /* ???3つ並ばない */
+
 }
 
 footer{
