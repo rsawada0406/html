@@ -50,6 +50,7 @@ header div{
 
 @media(max-width:768px){
     header div img{
+        /* この書き方は危険　モジュールを追加した際にヘッダーに影響を及ぼす可能性がある　クラス名を記述するとgood */
         width: 100%;
         padding-top:30px; 
     }
@@ -318,6 +319,7 @@ h2 span{
     overflow: hidden;
     text-decoration-line: none;
     box-shadow: 0px 3px 16px rgba(0,0,0,0.20);
+    transition: all .2s ease-out;
 }
 
 .subscription-contents a:hover .subscription-btn{
@@ -417,8 +419,17 @@ p.subscription-btn{
     margin-top:66px;
 }
 
-.item-area ul li :hover{
-    opacity: 0.5;
+.item-area ul li img{
+    width: 100%;
+    vertical-align: top;
+}
+
+.item-area ul li a{
+    transition: all .2s ease-out;
+}
+
+.item-area ul li a:hover{
+    opacity: 0.8;
 }
 
 @media(max-width:768px){
